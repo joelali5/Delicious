@@ -1,0 +1,82 @@
+.header{
+    background-color: $color-grey-light-3;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-column-gap: 10rem;
+    align-items: flex-end;
+
+    &__name{
+        font-size: 2rem;
+        font-family: 'Lobster Two', cursive;
+        font-weight: 700;
+        color: $color-primary-dark;
+        margin-left: 1rem;
+    }
+
+    &__form{
+        display: flex;
+
+        &--input{
+           width: 30rem;
+           padding: .7rem;
+           margin-bottom: .3rem;
+           border: none;
+           border-radius: 5rem;
+           transform: scale(1);
+           transition: all .4s;
+
+           @media only screen and (max-width: $bp-small) {
+                width: 15rem;
+                padding: .4rem;
+            }
+
+           &::placeholder{
+               font-size: 1.5rem;
+               color: $color-grey-dark;
+           }
+
+           &:focus,
+           &:active{
+               transform: scale(1.05);
+               outline: none;
+           }
+        }
+
+        &--btn{
+            border: none;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+
+            &:focus,
+            &:active{
+                border: none;
+                outline: none;
+            }
+        }
+
+        &--icon{
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+            top: 1rem;
+            right: .7rem;
+            fill: $color-grey-dark;
+            border: none;
+
+            &:hover{
+                transform: translateY(-1px);
+            }
+
+            &:focus,
+            &:active{
+                outline: none;
+                border: none;
+                transform: translateY(1px);
+            }
+        }
+    }
+}

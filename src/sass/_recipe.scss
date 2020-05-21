@@ -1,0 +1,107 @@
+.recipes{
+    background-image: linear-gradient(to right bottom, $color-grey-light-1, $color-grey-light-2);
+    grid-column: 3 / span 4;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__img{
+        width: 100%;
+    }
+
+    &__title{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: black;
+        //color: $color-primary-dark;
+        font-family: 'Roboto',sans-serif;
+        text-transform: uppercase;
+        transform: translateY(-6.5rem);
+        margin-left: 1.5rem;
+
+        @media only screen and (max-width: $bp-small) {
+           font-size: 1rem;
+           transform: translateY(-2.5rem);
+        }
+    }
+
+    &__ingredient{
+        justify-self: center;
+        margin-bottom: 2.5rem;
+        padding: 0 5vw;
+
+
+        &--title{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            align-self: flex-end;
+            color: $color-primary-dark;
+            margin-bottom: 2rem;
+        }
+
+        &--list{
+            list-style: none;
+        }
+        &--item{
+            text-align: left;
+            font-size: 1.8rem;
+            line-height: 1.7;
+            justify-self: center;
+        }
+    }
+
+    &__details{
+        display: flex;
+        align-items: flex-start;        
+        justify-content: space-around;
+        font-size: 1.5rem;
+        color: $color-primary-dark;
+
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+            text-align: left;
+            margin-left: 4rem;
+        }
+    }
+
+    .source__url{
+        text-align: center;
+        margin-top: 6rem;
+        text-decoration: none;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        align-self: center;
+        justify-self: center;
+        padding: 1rem 2rem;
+        color: #FFF;
+        background-color: $color-primary-light;
+        border-radius: 50rem;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.spinner{
+    position: relative;
+    
+    &__icon{
+        position: absolute;
+        left: 45%;
+        margin-top: 1.5rem;
+        fill: $color-primary-dark;
+        animation: rotate 1.5s infinite linear;
+        width: 2rem;
+        height: 2rem;
+    }
+}

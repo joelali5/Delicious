@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>testing</title>
+</head>
+<body>
+   <div class="container">
+       <!-- FIRST NAVBAR -->
+        <nav class="navbar">
+            <div class="navbar__left">
+                <p class="navbar__text">follow us on:</p>
+
+                <a href="" class="navbar__link">
+                    <svg class="navbar__icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a href="" class="navbar__link">
+                    <svg class="navbar__icon">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+                <a href="" class="navbar__link">
+                    <svg class="navbar__icon">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="navbar__right">
+                <ul class="navbar__r-list">
+                    <li class="navbar__r-item"><a href="#" class="navbar__r-link active">Home</a></li>
+                    <li class="navbar__r-item"><a href="#" class="navbar__r-link">About</a></li>
+                    <li class="navbar__r-item"><a href="#" class="navbar__r-link">Contact</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+
+        <!-- SECOND NAVBAR -->
+        <header class="header">
+           <p class="header__name">Delicious</p>
+           <form action="#" class="header__form">
+               <input type="text" class="header__form--input" placeholder="Find a recipe...">
+               <button class="header__form--btn">
+                   <svg class="header__form--icon">
+                       <use xlink:href="img/sprite.svg#icon-search"></use>
+                   </svg>
+               </button>
+           </form>
+        </header>
+
+        <!-- SEARCH RESULTS -->
+        <div class="result">
+            <ul class="result__list">
+                <!-- <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+                
+                <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="result__item">
+                    <a class="result__link "href="#23975">
+                        <p class="result__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li> -->
+            </ul>
+
+            <div class="result__page-elements">
+                    <!-- <button class="btn result__btn-prev">
+                        <span>page 1</span>
+                    </button>
+                    
+                    <button class="btn result__btn-next">
+                        <span>page 3</span>
+                    </button> -->
+            </div>        
+        </div>
+
+        <!-- RECIPE -->
+        <div class="recipes">
+            <div class="recipe">
+                <!-- <div class="recipe__head">
+                    <img src="img/img2.png" alt="recipe image" class="recipe__img">
+                    <p class="recipe__title">Spices and Seasonings</p>
+                </div>
+
+                <div class="recipe__ingredient">
+                    <p class="recipe__ingredient--title">Ingredients</p>
+                    <ul class="recipe__ingredient--list">
+                        <li class="recipe__ingredient--item">
+                            1T butter
+                        </li>
+                        <li class="recipe__ingredient--item">
+                            1/4 cup whole wheat bread crumbs (I used panko)
+                        </li>
+                        <li class="recipe__ingredient--item">
+                            6-8 ounces pasta (I used linguine)
+                        </li>
+                        <li class="recipe__ingredient--item">
+                            5-6 cloves garlic
+                        </li>
+                        <li class="recipe__ingredient--item">
+                            1-2T extra virgin olive oil
+                        </li>
+                        <li class="recipe__ingredient--item">
+                            salt and pepper, to taste
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="recipe__details">
+                    <p class="recipe__time">
+                        Time: 
+                        <span class="cook__time">
+                            45
+                        </span>
+                        minutes
+                    </p>
+
+                    <p class="recipe__servings">
+                        Servings: 
+                        <span class="recipe__serving">
+                            4
+                        </span>
+                    </p>
+
+                    <p class="recipe__health-score">
+                        Score: 
+                        <span class="score">
+                            19
+                        </span>
+                    </p>
+                </div>
+
+                <a href="https://www.spoonacular.com" class="source__url" target="_blank">Learn more</a> -->
+            </div>
+        </div>
+
+        <div class="similar-recipe">
+            <h5 class="similar-recipe__heading">similar recipe</h5>
+            <ul class="similar-recipe__list">
+                
+                <!-- <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza Peperoni pizza</p>
+                    </a>
+                </li>
+
+                <li class="similar-recipe__item">
+                    <a class="similar-recipe__link "href="#23975">
+                        <p class="similar-recipe__title">Peperoni pizza </p>
+                    </a>
+                </li> -->
+            </ul>
+
+            <div class="copyright">
+                &copy; Joel Aliyu. Powered by
+                <a href="https://www.spoonacular.com" class="link" target="_blank">spoonacular.com</a>
+            </div>
+        </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+$color-grey-light-1: #dcdde1;
+$color-grey-light-2: #bdc3c7;
+$color-primary-dark: #9e7109;
+$color-primary-light: #eeb312d7;
+$color-grey-light-3: rgb(224, 221, 221);
+$color-grey-dark: rgb(199, 197, 197);
+
+$color-grey-dark-2: #c3c9cc;
+
+$color-hover: #bccfdb;
+
+//MEDIA BREAKPOINTS
+$bp-medium: 43.75em;
+$bp-small: 37.5em;
+$bp-smallest: 34.4em;
+
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-medium){
+        font-size: 50%;
+    }
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    //background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: #FFF;
+    box-shadow: 0 2rem 4rem rgba(#000, .1);
+
+    display: grid;
+    grid-template-rows: 4rem min-content minmax(35vw, min-content);
+    grid-template-columns: repeat(8, 1fr); 
+
+}
