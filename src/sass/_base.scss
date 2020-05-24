@@ -49,4 +49,8 @@ body{
     grid-template-rows: 4rem min-content minmax(35vw, min-content);
     grid-template-columns: repeat(8, 1fr); 
 
+    @media only screen and (max-width: $bp-medium){
+        grid-template-rows: 4rem min-content minmax(85vw, min-content);
+    }
+
 }
